@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">Card Games</string>
+
+    <!--String constants for descriptions-->
+    <string name="capitalism_description">
+        Get rid of all your cards as quickly
+        as possible to climb the capitalistic hierarchy.</string>
+    <string name="mao_description">
+        Get creative with the rules as you punish yourself
+        for forgetting your own.
+    </string>
+    <string name="hearts_description">
+        Avoid getting points while coming up with an evil
+        plan to give them to your friends(enemies).
+    </string>
+    <string name="scotch_bridge_description">
+        Bet on how many trick you think you will take, but
+        your friends will try to make sure you don\'t make your bet.
+    </string>
+    <string name="rummy_description">
+        Turn your entire hand into melds and hope that no
+        one else has the cards that you need so badly.
+    </string>
+
+    <!--String constants for button text-->
+    <string name="capitalism">Capitalism</string>
+    <string name="mao">Mao</string>
+    <string name="hearts">Hearts</string>
+    <string name="scotch_bridge">Scotch Bridge</string>
+    <string name="rummy">Rummy</string>
+
+    <!---String constants for the short summaries-->
+    <string name="capitalism_short_summary">
+        Capitalism is a shedding game. The game employs a hierarchy that gives those
+        at the top an advantage at the beginning of each round. This may sound
+        unfair, but it makes it more rewarding when you overthrow those at the top.
+    </string>
+    <string name="mao_short_summary">
+        Mao is a shedding game very similar to Uno. Mao lets the winner of each round
+        to create a new secret rule. The rules are cumulative, meaning the game will
+        become more difficult yet more fun.
+    </string>
+    <string name="hearts_short_summary">
+        Hearts is under the family of trick-taking games. What makes hearts interesting
+        is that you are trying to avoid getting points. The game can also involve
+        intense strategies as when you play which card is very important.
+    </string>
+    <string name="scotch_bridge_short_summary">
+        Scotch Bridge is a trick-taking game that uses a trump suit. It tests your
+        ability to evaluate your hand since you are to bet how many trick you
+        think you are going to take during the round. It often involves a change
+        in plan when you win or lose a trick unexpectedly.
+    </string>
+    <string name="rummy_short_summary">
+        Rummy falls under the family of card games also known as rummy. The objective
+        of rummy card games is to form melds, or certain combinations of cards.
+        Because of the nature of the game, both luck and skill are important in
+        determining the winner.
+    </string>
+
+    <!--String constants for the setup-->
+    <string name="capitalism_setup">
+        Players: 3+
+        \nDeck: Standard 52-card deck
+        \nPlaying Time: ~2 minutes per round
+    </string>
+    <string name="mao_setup">
+        Players: 2+
+        \nDeck: Standard 52-card deck
+        \nPlaying Time: 2-15 minutes per round
+    </string>
+    <string name="hearts_setup">
+        Players: 4 is preferred (3 or 5 is also possible)
+        \nDeck: Standard 52-card deck
+        \nPlaying Time: 2-5 minutes per round, 1-2 hours per game
+    </string>
+    <string name="scotch_bridge_setup">
+        Players: 4 is preferred (3 or 5 is also possible)
+        \nDeck: Standard 52-card deck
+        \nPlaying Time: 1-5 minutes per round, 1-2 hours per game
+    </string>
+    <string name="rummy_setup">
+        Players: 2+
+        \nDeck: Standard 52-card deck
+        \nPlaying Time: 1-10 minutes per round, 1-2 hours per game
+    </string>
+
+    <!--String constants for the rules-->
+    <string name="capitalism_rules">
+        First round: All of the cards are dealt out as evenly as possible to all of
+        the players. The 3 of clubs starts the play. The person who has the
+        3 of clubs can start the pile with as many 3\'s as they wish.
+        \n\nPlay: The person who starts a pile determines how many cards can be played
+        at once until the pile is cleared.
+    </string>
+    <string name="mao_rules"></string>
+    <string name="hearts_rules"></string>
+    <string name="scotch_bridge_rules"></string>
+    <string name="rummy_rules"></string>
+
+    <!--String constants for the endgame-->
+    <string name="capitalism_endgame">
+        There is no official end to the game (like capitalism in the real world), but
+        you can use metrics such as number of presidencies to determine the winner.
+    </string>
+    <string name="mao_endgame"></string>
+    <string name="hearts_endgame"></string>
+    <string name="scotch_bridge_endgame"></string>
+    <string name="rummy_endgame"></string>
+
+    <!--String constants for the variations-->
+    <string name="capitalism_variations">
+        Reverses: Jokers can be added to the deck and be used to reverse the direction of play
+        \n\nCommunism: The person who finished last in the previous round can ask for 2 cards
+        from the person who finished first. Likewise, the person who was second to last can
+        ask for 1 card from the person who finished second.
+    </string>
+    <string name="mao_variations"></string>
+    <string name="hearts_variations"></string>
+    <string name="scotch_bridge_variations"></string>
+    <string name="rummy_variations"></string>
+
+    <!--String constants for headers-->
+    <string name="setup">Setup:</string>
+    <string name="rules">Rules:</string>
+    <string name="endgame">Endgame:</string>
+    <string name="variations">Variations:</string>
+</resources>
