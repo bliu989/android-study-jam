@@ -90,23 +90,144 @@
         First round: All of the cards are dealt out as evenly as possible to all of
         the players. The 3 of clubs starts the play. The person who has the
         3 of clubs can start the pile with as many 3\'s as they wish.
+        \n\nRanking order: The cards are ranked, from lowest to highest: 3, 4, 5, 6,
+        7, 8, 9, 10, J, Q, K, A. 2\'s are special cards and are not part of the ranking.
         \n\nPlay: The person who starts a pile determines how many cards can be played
-        at once until the pile is cleared.
+        at once until the pile is cleared. A player can start a pile with 1, 2, or
+        3 cards of the same rank. The play continues clockwise. The next player can
+        either choose to play or pass. If they choose to play, they must play the same
+        number of cards as the person who started the pile. The rank of the cards played
+        must be the same as or higher than that of the cards previously on top of the pile.
+        A player can choose to pass even if they can play. If every player passes, then
+        the pile clears and the player who played the last card can start a new pile.
+        \n\nSkips: If the previous player plays a single card and you play a card
+        of the same rank, the next player is skipped and play continues with the player
+        after them.
+        \n\n2\'s: When you play a 2 on your turn, the pile clears and you can start a
+        new pile. You are not allowed to start a pile with a 2. Also, having a 2 as your
+        last card automatically demotes you to last place.
+        \n\nCompletions: Completions can be played out of turn. You can make a completion
+        when you can place cards on top of the pile and make 4 cards of the same rank.
+        However, you must do this before someone else plays more cards on top of the pile.
+        You can even make a completion when you are skipped. After a completion, the pile
+        clears and you start the next pile.
+        \n\nEnding a round: The first person to get rid of all of their cards becomes
+        \"president\". The round continues until all of the players have gotten rid of all
+        of their cards. If a player who has gotten rid of all of their cards happens to have
+        another turn, then it is the turn of the player who is sitting clockwise to them.
+        The second person to finish becomes \"vice president\". The second to last person to
+        finish becomes \"vice scum\" and the player who came in last is \"scum\". The titles
+        given to the players can be changed to whatever the players want as long as there is
+        a hierarchy.
+        \n\nStarting a new round: The dealer deals out as many piles as there are players
+        as evenly as possible. The top card of each pile is flipped over. If the top cards
+        of any two piles are the same rank, then the next card of those piles are also flipped
+        over until all of the top cards are unique in rank. The \"president\" from the
+        previous round gets to pick first which pile they want as their hand. The order
+        that the players pick their hands is the same as the order they finished in the
+        previous round. Now the president and vice president gets to ask for cards from the
+        vice scum and scum, respectively. The president asks the scum if they have a card of
+        a certain rank, or a 2. The scum cannot lie. They must give the card that the president
+        asks for to the president. The president asks for 2 cards from the scum and gives
+        back 2 cards of the president\'s choice. The vice president does the same with the
+        vice scum but they only exchange 1 card.
     </string>
-    <string name="mao_rules"></string>
-    <string name="hearts_rules"></string>
-    <string name="scotch_bridge_rules"></string>
-    <string name="rummy_rules"></string>
+    <string name="mao_rules">
+        Each player is dealt 7 cards (or fewer if there are many people). The remaining cards
+        are placed in the center facedown and one card is flipped over. The first player must play
+        a card of the same suit or of the same rank as that card. The next player must do the
+        same with the new top card and play continues clockwise like that. If a player cannot
+        play, they must draw a card from the top of the facedown pile. If there are no more cards
+        left in the facedown pile, the faceup pile in reshuffled except for the top card, which
+        remains the top card after the shuffle.
+        \n\nMao: A player who has only one card left must announce \"Mao\" or else they would be
+        penalized with 2 cards from the facedown pile.
+        \n\nEnding the round: A player wins the round if they end their turn with no cards left.
+        \n\nAdditional rules: The player who won the previous round gets to choose a new rule
+        to be added into the game. The rules require a player to do a certain action (or not
+        do a certain action) when something happens. The rules cannot target a specific player
+        or be a new winning condition. If someone breaks a rule, they are penalized 1 card from
+        the facedown pile and they are told what they did or did not do, but not when the rule is
+        triggered.
+    </string>
+    <string name="hearts_rules">
+        Each player is dealt 13 cards.
+        \n\nPassing: At the beginning of each round, 3 cards are passed to another player based
+        on which round it is. The passing order repeats every 4 rounds: pass left, pass right,
+        pass across, no pass.
+        \n\nPlay: Each round consists of 13 tricks. The player with the 2 of clubs starts the
+        first trick and for other tricks, the winner of each tricks starts the next. Play
+        continues clockwise. Players
+        must play a card of the same suit as the card that started the trick. If they do not
+        have that suit, then they can play anything they wish. A player wins the trick by
+        playing the highest ranked card of the suit that started the trick, with aces being
+        the highest ranked.
+        \n\nBreaking Hearts: A player has only lead a trick with hearts if hearts have been
+        \"broken\" or have only hearts left in their hand. To \"break\" hearts, you have to
+        legally play a heart card in a trick.
+        \n\nScoring: Players get points based on the points of the cards in the tricks they have
+        won. Each heart card is worth 1 point. The queen of spades is worth 13 points.
+    </string>
+    <string name="scotch_bridge_rules">
+        Rounds start with 1 card per player. The number of cards increase by 1 per round up to 13.
+        Then it decreases by 1 down to 1. The position of dealer also changes to the person
+        clockwise of the current dealer each round.
+        \n\nBetting: Starting with the player to the left of the dealer and going clockwise,
+        each player announces how many tricks they think they will take that round. The sum of
+        the number of tricks each player bets cannot equal the number of cards each player has.
+        Since the dealer bets last, they must bet a number of tricks so that this rules is not
+        violated. This rule ensures that someone will not get exactly the number of tricks that
+        they bet.
+        \n\nPlay: Each round consists of tricks. The player left of the dealer starts the
+        first trick and for other tricks, the winner of each tricks starts the next. Play
+        continues clockwise. Players
+        must play a card of the same suit as the card that started the trick. If they do not
+        have that suit, then they can play anything they wish. A player wins the trick by
+        playing the highest ranked card of the suit that started the trick, with aces being
+        the highest ranked, or if there is a trump card, the highest ranked card of the trump suit.
+        The dealer flips over 1 card from the remaining facedown cards. The suit of the card
+        is trump suit. In the round with 13 cards per player, there is not a trump suit.
+        \n\nScoring: If a player wins exactly the number of tricks that they bet, they get 10 times
+        that number in points. If a player fails to make their bet exactly, they lose 10 times
+        the number of tricks they were over or under the bet they made, in points.
+    </string>
+    <string name="rummy_rules">
+        Each player is dealt 7 cards. The remaining cards are placed in the center in a facedown
+        pile. One card is flipped over to start the faceup pile.
+        \n\nPlay: Players can either take the top card from the facedown pile or faceup pile.
+        Players can then meld (or put down in front of them) a run or a set. A player can
+        only meld once per turn. A player can also \"lay off\" a card by adding to melds that
+        are already on the table. A player ends their turn by discarding a card onto the faceup
+        pile.
+        \n\nRun: A run is a sequence of at least 3 cards in order of the same suit. Aces are low
+        only in this game. A23 of hearts in a valid run but QKA of hearts is not.
+        \n\nSet: A set is 3 or 4 cards of the same rank.
+        \n\nEnding a round: A round ends when one player has no more cards in their hand. The
+        get the points on the cards that other players are still holding (i.e. not yet melded
+        or laid off). Aces are worth 1 point. 2\'s through 10\'s are worth the same number of
+        points as the number on the card. Jacks, queens, and kings are all worth 10 points each.
+    </string>
 
     <!--String constants for the endgame-->
     <string name="capitalism_endgame">
         There is no official end to the game (like capitalism in the real world), but
         you can use metrics such as number of presidencies to determine the winner.
     </string>
-    <string name="mao_endgame"></string>
-    <string name="hearts_endgame"></string>
-    <string name="scotch_bridge_endgame"></string>
-    <string name="rummy_endgame"></string>
+    <string name="mao_endgame">
+        There is no official end to the game, but it usually ends when there are too many
+        rules and players are penalized too often.
+    </string>
+    <string name="hearts_endgame">
+        The game ends when a player reaches 100 points. The player with the fewest number of
+        points wins the game
+    </string>
+    <string name="scotch_bridge_endgame">
+        The player with the most points after all of the rounds wins.
+    </string>
+    <string name="rummy_endgame">
+        The first to reach an agreed upon number of point wins. Alternatively, the player
+        with the most points after an agreed upon number of rounds wins.
+    </string>
 
     <!--String constants for the variations-->
     <string name="capitalism_variations">
@@ -115,10 +236,25 @@
         from the person who finished first. Likewise, the person who was second to last can
         ask for 1 card from the person who finished second.
     </string>
-    <string name="mao_variations"></string>
-    <string name="hearts_variations"></string>
-    <string name="scotch_bridge_variations"></string>
-    <string name="rummy_variations"></string>
+    <string name="mao_variations">
+        Players can start the game with an agreed upon set of rules to encourage more action.
+    </string>
+    <string name="hearts_variations">
+        Points can be assigned to other cards. Common cards are the jack of diamonds, worth
+        -10 points, and the 7 of clubs, worth 7 points.
+        \n\n Trick extension: If an 8 (or some other rank) is played in trick, the player
+        who would have won the trick does not take cards. Instead, another trick is played
+        and the winner of the second trick takes all of the cards in the middle. It is possible
+        to play another 8 in the second trick, extending the trick to another trick.
+    </string>
+    <string name="scotch_bridge_variations">
+        The full game can take a long time. Players can elect to play half of the full game,
+        stopping at the round with 13 cards per players.
+    </string>
+    <string name="rummy_variations">
+        There is a whole family of card games related to this basic version of rummy. Common
+        rummy games include Rummy 500, Gin Rummy, and Canasta.
+    </string>
 
     <!--String constants for headers-->
     <string name="setup">Setup:</string>
