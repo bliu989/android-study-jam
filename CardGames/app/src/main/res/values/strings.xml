@@ -261,4 +261,9 @@
     <string name="rules">Rules:</string>
     <string name="endgame">Endgame:</string>
     <string name="variations">Variations:</string>
+
+    <!--String constants for email-->
+    <string name="suggestions">Suggestions?</string>
+    <string name="email">baliu@vassar.edu</string>
+    <string name="email_subject">Suggestions for Card Game app</string>
 </resources>

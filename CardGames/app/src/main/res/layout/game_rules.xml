@@ -7,9 +7,30 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:id="@+id/rules_layout"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/game_graphic"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/short_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:textSize="24sp"
+            android:padding="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/rules_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

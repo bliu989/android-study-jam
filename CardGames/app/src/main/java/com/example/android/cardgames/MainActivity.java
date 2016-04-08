@@ -2,6 +2,7 @@ package com.example.android.cardgames;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -58,5 +59,16 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("viewId", viewId);
         intent.putExtra("game", gameInfo[viewId]);
         startActivity(intent);
+    }
+
+    public void sendEmail(View v) {
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:"));
+        String[] emails = {(String) getText(R.string.email)};
+        intent.putExtra(Intent.EXTRA_EMAIL, emails);
+        intent.putExtra(Intent.EXTRA_SUBJECT, getText(R.string.email_subject));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 }

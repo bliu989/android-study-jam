@@ -8,10 +8,28 @@
 
     <LinearLayout
         android:background="@android:color/black"
-        android:id="@+id/main_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <LinearLayout
+            android:background="@android:color/black"
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/suggestion_button"
+            android:text="@string/suggestions"
+            android:onClick="sendEmail"
+            android:background="@drawable/header_button"
+            android:textSize="24dp"
+            android:textColor="@android:color/white"
+            android:layout_margin="16dp"
+            />
     </LinearLayout>
 </ScrollView>

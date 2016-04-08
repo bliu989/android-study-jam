@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_margin="12dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp">
 
-    <TextView
+    <Button
         android:id="@+id/header_text"
-        style="@style/HeaderText"
-        android:layout_margin="12dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="expandCollapse"
+        android:background="@drawable/header_button"
+        android:textSize="24dp"
+        android:textColor="@android:color/white" />
 
     <TextView
         android:id="@+id/content"
-        style="@style/DescriptionDisplay"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:padding="12dp"
+        style="@style/DescriptionDisplay" />
 
 </LinearLayout>

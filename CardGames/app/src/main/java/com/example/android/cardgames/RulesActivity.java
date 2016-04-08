@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +13,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class RulesActivity extends AppCompatActivity {
+
+    int[] currentGameString;
+    int numberOfSections;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,69 +49,42 @@ public class RulesActivity extends AppCompatActivity {
                         R.string.rummy_rules, R.string.rummy_endgame,
                         R.string.rummy_variations}
         };
-        int[] currentGameString = gameStrings[viewId];
+        currentGameString = gameStrings[viewId];
 
         // writes a short summary
-        TextView shortSummary = new TextView(this);
+        TextView shortSummary = (TextView) findViewById(R.id.short_summary);
         shortSummary.setText(getText(currentGameString[0]));
-        shortSummary.setTextColor(ContextCompat.getColor(this, R.color.textColor));
-        int padding = dpToPixels(12);
-        shortSummary.setPadding(padding,padding,padding,padding);
-        rulesLayout.addView(shortSummary);
-
 
         LayoutInflater inflater =
                 (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        // writes about the setup of the game
-        View setupBox = inflater.inflate(R.layout.description_box, rulesLayout, false);
 
-        TextView setup_header = (TextView) setupBox.findViewById(R.id.header_text);
-        setup_header.setText(R.string.setup);
+        int[] sections = {
+                R.string.setup,
+                R.string.rules,
+                R.string.endgame,
+                R.string.variations,
+        };
 
-        TextView setup_content = (TextView) setupBox.findViewById(R.id.content);
-        setup_content.setText(currentGameString[1]);
+        numberOfSections = sections.length;
+        for (int section = 0 ; section < numberOfSections ; section++) {
+            View box = inflater.inflate(R.layout.description_box, rulesLayout, false);
 
-        rulesLayout.addView(setupBox);
+            Button boxHeader = (Button) box.findViewById(R.id.header_text);
+            boxHeader.setId(section);
+            boxHeader.setText(sections[section]);
 
-        // writes about how the game is played
-        View rulesBox = inflater.inflate(R.layout.description_box, rulesLayout, false);
+            TextView boxContent = (TextView) box.findViewById(R.id.content);
+            boxContent.setId(section + numberOfSections);
+           // boxContent.setText(currentGameString[section+1]);
 
-        TextView rulesHeader = (TextView) rulesBox.findViewById(R.id.header_text);
-        rulesHeader.setText(R.string.rules);
-
-        TextView rulesContent = (TextView) rulesBox.findViewById(R.id.content);
-        rulesContent.setText(currentGameString[2]);
-
-        rulesLayout.addView(rulesBox);
-
-
-        // writes about how the game ends
-        View endgameBox = inflater.inflate(R.layout.description_box, rulesLayout, false);
-
-        TextView endgameHeader = (TextView) endgameBox.findViewById(R.id.header_text);
-        endgameHeader.setText(R.string.endgame);
-
-        TextView endgameContent = (TextView) endgameBox.findViewById(R.id.content);
-        endgameContent.setText(currentGameString[3]);
-
-        rulesLayout.addView(endgameBox);
-
-        // writes about variations of the game
-        View variationsBox = inflater.inflate(R.layout.description_box, rulesLayout, false);
-
-        TextView variations_header = (TextView) variationsBox.findViewById(R.id.header_text);
-        variations_header.setText(R.string.variations);
-
-        TextView variations_content = (TextView) variationsBox.findViewById(R.id.content);
-        variations_content.setText(currentGameString[4]);
-
-        rulesLayout.addView(variationsBox);
+            rulesLayout.addView(box);
+        }
     }
 
     public void setHeader(int[] game) {
         LayoutInflater inflater =
                 (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        LinearLayout rulesLayout = (LinearLayout) findViewById(R.id.rules_layout);
+        LinearLayout rulesLayout = (LinearLayout) findViewById(R.id.game_graphic);
 
         View newSummary = inflater.inflate(R.layout.header_layout, rulesLayout, false);
         // put the appropriate image in the new view
@@ -120,8 +97,13 @@ public class RulesActivity extends AppCompatActivity {
         rulesLayout.addView(newSummary);
     }
 
-    public int dpToPixels(int dp){
-        float scale = getResources().getDisplayMetrics().density;
-        return (int) (dp*scale + 0.5f);
+    public void expandCollapse(View v){
+        TextView boxContent = (TextView) findViewById(v.getId()+numberOfSections);
+        if (boxContent.getText() == "") {
+            boxContent.setText(currentGameString[v.getId() + 1]);
+        }
+        else {
+            boxContent.setText("");
+        }
     }
 }
