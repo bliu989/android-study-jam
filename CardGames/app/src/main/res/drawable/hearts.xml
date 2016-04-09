@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/queen_of_spades2"
+        android:left="-200dp" android:right="200dp"/>
+    <item android:drawable="@drawable/ace_of_hearts"
+        android:left="-100dp" android:right="100dp"/>
+    <item android:drawable="@drawable/king_of_hearts2"
+        android:left="0dp" android:right="0dp"/>
+    <item android:drawable="@drawable/queen_of_hearts2"
+        android:left="100dp" android:right="-100dp"/>
+    <item android:drawable="@drawable/jack_of_hearts2"
+        android:left="200dp" android:right="-200dp"/>
+    <item android:drawable="@drawable/ten_of_hearts"
+        android:left="300dp" android:right="-300dp"/>
+</layer-list>

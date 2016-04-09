@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/two_of_clubs"
+        android:left="-150dp" android:right="150dp"/>
+    <item android:drawable="@drawable/two_of_spades"
+        android:left="-50dp" android:right="50dp"/>
+    <item android:drawable="@drawable/two_of_hearts"
+        android:left="50dp" android:right="-50dp"/>
+    <item android:drawable="@drawable/two_of_diamonds"
+        android:left="150dp" android:right="-150dp"/>
+</layer-list>

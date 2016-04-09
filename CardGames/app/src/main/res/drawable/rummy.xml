@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/five_of_clubs"
+        android:left="-100dp" android:right="100dp"/>
+    <item android:drawable="@drawable/six_of_clubs"
+        android:left="0dp" android:right="0dp"/>
+    <item android:drawable="@drawable/seven_of_clubs"
+        android:left="100dp" android:right="-100dp"/>
+</layer-list>

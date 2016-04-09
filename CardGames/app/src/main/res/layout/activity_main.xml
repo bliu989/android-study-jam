@@ -31,5 +31,6 @@
             android:textColor="@android:color/white"
             android:layout_margin="16dp"
             />
+
     </LinearLayout>
 </ScrollView>
